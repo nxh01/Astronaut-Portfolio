@@ -1,0 +1,794 @@
+/* Fonts */
+@font-face {
+  font-family: "futura-Medium";
+  src: url(../Fonts/futura\ medium\ bt.ttf);
+}
+@font-face {
+  font-family: "futura-Bold";
+  src: url(../Fonts/futura\ bold.ttf);
+}
+/* Others */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  background-color: #3f3d56;
+}
+
+/* Buttons */
+.scroll__top {
+  position: fixed;
+  right: -10rem;
+  bottom: -10rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff6584;
+  transition: 0.9s;
+}
+.show-top {
+  bottom: 1;
+}
+.scrollup__icon {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  font-size: 30px;
+  color: #fff;
+  transition: 0.9s;
+}
+.show-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff6584;
+  transition: 0.9s;
+}
+.scroll__top:hover {
+  background-color: #8985c6;
+  transition: 0.9s;
+}
+.buttons {
+  width: 230px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: #ff6584;
+  font-size: 25px;
+  font-family: "futura-Medium";
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.buttons:hover {
+  background-color: #8985c6;
+  transition: 0.9s;
+}
+/* NavBar */
+.nav {
+  width: 100%;
+  height: 85px;
+  background-color: rgba(20, 26, 38, 0.1);
+  margin-bottom: 100px;
+  transition: 0.9s;
+}
+.nav__title {
+  width: 127px;
+  height: 29px;
+  font-family: "futura";
+  font-size: 25px;
+  letter-spacing: 1.25px;
+  color: #ff6584;
+  display: none;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.nav__title:hover {
+  color: #fff;
+  transition: 0.9s;
+}
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.9s;
+}
+.nav__list {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: repeat(4, 120px);
+  transition: 0.9s;
+}
+.nav__item {
+  list-style-type: none;
+  transition: 0.9s;
+}
+.nav__link {
+  font-family: "futura-Medium";
+  font-size: 25px;
+  letter-spacing: 1.25px;
+  text-decoration: none;
+  text-decoration-line: none;
+  color: #fff;
+  transition: 0.9s;
+}
+.nav__close {
+  font-size: 20px;
+  color: white;
+  transition: 0.9s;
+  cursor: pointer;
+  display: none;
+}
+.nav__close:hover {
+  color: #e7607e;
+  transition: 0.9s;
+}
+.nav__link:hover {
+  color: #ff6584;
+  transition: 0.9s;
+}
+.nav__collapse {
+  display: none;
+}
+.nav__collapse:hover {
+  color: #fff;
+  transition: 0.9s;
+}
+
+/* Home */
+.home {
+  background-color: #3f3d56;
+  height: 906px;
+  transition: 0.9s;
+}
+.home__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.home__title {
+  width: 544px;
+  height: 44px;
+  margin: 0 0 15px;
+  font-family: "futura";
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #ff6584;
+  transition: 0.9s;
+}
+.home__desc {
+  width: 466px;
+  height: 117px;
+  margin: 15px 78px 22px 0;
+  font-family: "futura-Medium";
+  font-size: 30px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #e8e8e8;
+  transition: 0.9s;
+}
+.home__button a {
+  color: #fff;
+  text-decoration: none;
+}
+.home__svg {
+  transition: 0.9s;
+}
+/* About */
+.about {
+  height: 890px;
+  background-color: #3f3d56;
+  transition: 0.9s;
+}
+.about__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.about__svgprop {
+  transition: 0.9s;
+}
+.about__title {
+  width: 100%;
+  text-align: center;
+  height: 44px;
+  font-family: "futura";
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #ff6584;
+  transition: 0.9s;
+}
+.about__info {
+  display: flex;
+  flex-direction: column;
+  transition: 0.9s;
+}
+.about__astronaut {
+  width: 197px;
+  height: 44px;
+  margin: 0 225px 5px 0;
+  font-family: "futura";
+  font-size: 32px;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #ededed;
+  transition: 0.9s;
+}
+.astronaut__desc {
+  width: 420px;
+  height: 117px;
+  margin: 5px 0 0 2px;
+  font-family: "futura-Medium";
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #e8e8e8;
+  transition: 0.9s;
+}
+.about__programmer {
+  width: 246px;
+  height: 44px;
+  margin: 60px 177px 6px 0;
+  font-family: "futura";
+  font-size: 32px;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #ededed;
+  transition: 0.9s;
+}
+.programmer__desc {
+  width: 423px;
+  height: 153px;
+  margin: 6px 0 0;
+  font-family: "futura-Medium";
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #e8e8e8;
+  transition: 0.9s;
+}
+/* Contact Me */
+.contact {
+  background-color: #3f3d56;
+  height: 910px;
+  background-image: url(../svg/Contact\ svg.svg);
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: center;
+  transition: 0.9s;
+}
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.9s;
+}
+.contact__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  transition: 0.9s;
+}
+.contact__titleh1 {
+  margin-top: 80px;
+  width: 308px;
+  height: 44px;
+  font-family: "futura";
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #ff6584;
+  transition: 0.9s;
+}
+.contact__input {
+  width: 655px;
+  height: 30px;
+  margin: 0 0 14px;
+  padding: 18px 0 18px 11px;
+  border-radius: 7px;
+  border: solid 1px rgba(0, 0, 0, 0.8);
+  background-color: rgba(63, 61, 86, 0.9);
+  color: #fff;
+  font-size: 25px;
+  transition: 0.9s;
+}
+.contact__input::placeholder {
+  width: fit-content;
+  height: 29px;
+  margin: 0 236.4px 0 0;
+  font-family: "futura-Medium";
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #c7c7c7;
+}
+.message {
+  resize: vertical;
+  height: 245px;
+  max-height: 245px;
+  min-height: 100px;
+  transition: 0.9s;
+}
+/* Footer */
+.footer__container {
+  height: 215px;
+  background-color: #29283a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.9s;
+}
+.footer__credits {
+  width: 309px;
+  height: 30px;
+  font-family: "futura-Medium";
+  font-size: 20px;
+  color: #8c8c8c;
+  transition: 0.9s;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  transition: 0.9s;
+}
+.footer__links {
+  width: 76px;
+  height: 29px;
+  margin: 5px;
+  font-size: 25px;
+  letter-spacing: 1.25px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "futura-Medium";
+  transition: 0.9s;
+  transition: 0.9s;
+}
+.footer__links:hover {
+  color: #ff6584;
+  transition: 0.9s;
+}
+.footer__social a {
+  text-decoration: none;
+}
+.socials {
+  font-size: 30px;
+  color: #ff6584;
+  transition: 0.9s;
+  transition: 0.9s;
+}
+.socials:hover {
+  color: white;
+  transition: 0.9s;
+}
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 20px;
+  border-radius: 0.5rem;
+  transition: 0.9s;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #29283a;
+  border-radius: 0.5rem;
+  transition: 0.9s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8985c6;
+  transition: 0.9s;
+}
+
+/* Medium Device */
+@media screen and (max-width: 1225px) {
+  /* home */
+  .home {
+    height: 1000px;
+    transition: 0.9s;
+  }
+  .home__container {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 39px;
+    transition: 0.9s;
+  }
+  .home__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 0.9s;
+  }
+  .home__desc {
+    margin: 0px 35px 0px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.9s;
+  }
+  .home__title {
+    text-align: center;
+    font-size: 35px;
+    transition: 0.9s;
+  }
+  .buttons {
+    width: 190px;
+    height: 60px;
+    font-size: 20px;
+    transition: 0.9s;
+  }
+  /* About */
+  .about {
+    height: 725px;
+    font-size: 35px;
+    transition: 0.9s;
+  }
+  .about__svgprop {
+    width: 413px;
+    height: 378px;
+    transition: 0.9s;
+  }
+  .about__title {
+    text-align: center;
+    font-size: 35px;
+    transition: 0.9s;
+  }
+  .about__astronaut,
+  .about__programmer {
+    font-size: 28px;
+    transition: 0.9s;
+  }
+  .astronaut__desc,
+  .programmer__desc {
+    font-size: 25px;
+    transition: 0.9s;
+  }
+  .about__programmer {
+    margin: 20px 177px 6px 0;
+    transition: 0.9s;
+  }
+}
+/* Medium-small Devices */
+@media screen and (max-width: 855px) {
+  /* About */
+  .about {
+    height: 940px;
+    transition: 0.9s;
+  }
+  .about__title {
+    margin-bottom: 40px;
+    transition: 0.9s;
+  }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    transition: 0.9s;
+  }
+  /* Contact */
+  .contact__titleh1 {
+    transition: 0.9s;
+  }
+  .contact__input {
+    width: 510px;
+    transition: 0.9s;
+  }
+  /* footer */
+  .footer__credits {
+    width: 223px;
+    font-size: 15px;
+    transition: 0.9s;
+  }
+  .footer__links {
+    font-size: 20px;
+    transition: 0.9s;
+  }
+  .socials {
+    font-size: 25px;
+    transition: 0.9s;
+  }
+}
+/* Small Devices */
+@media screen and (max-width: 680px) {
+  /* Navbar */
+  .nav__showmenu {
+    width: 100%;
+    height: 20px;
+  }
+  .nav__smalldevice {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    overflow: hidden;
+  }
+  .nav__link {
+    font-size: 20px;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+  }
+  .nav__menu {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    background-color: #3b3a51;
+    transition: 0.9s;
+  }
+  .remove-menu {
+    top: -400px;
+    transition: 0.9s;
+  }
+  .nav__close {
+    display: inline-block;
+  }
+  .nav__title {
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.9s;
+  }
+
+  .nav__collapse {
+    font-size: 50px;
+    display: inline-block;
+    color: #e7607e;
+    margin-top: 10px;
+    margin-right: 5px;
+    transition: 0.9s;
+    cursor: pointer;
+  }
+  /* Home */
+  .home__svg {
+    display: none;
+    transition: 0.9s;
+  }
+  .home {
+    height: 650px;
+    background: url(../svg/Home\ astronaut\ 2.svg);
+    background-size: fill 397px 307px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 0.9s;
+  }
+  .home__container {
+    overflow: hidden;
+  }
+  .home__title {
+    font-size: 25px;
+    height: 30px;
+    transition: 0.9s;
+  }
+  .home__desc {
+    font-size: 20px;
+    margin: 0px 35px 0px;
+    transition: 0.9s;
+    height: 90px;
+  }
+  .buttons {
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    transition: 0.9s;
+  }
+  /* About */
+  .about__container {
+    overflow: hidden;
+  }
+  .about {
+    height: 741px;
+  }
+  .about__title {
+    font-size: 25px;
+  }
+  .about__svgprop {
+    width: 293px;
+    height: 268px;
+  }
+  .about__text {
+    margin-top: 30px;
+  }
+  .about__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .about__astronaut,
+  .about__programmer {
+    font-size: 22px;
+  }
+  .astronaut__holder,
+  .programmer__holder {
+    display: flex;
+    justify-content: center;
+    padding-left: 270px;
+    overflow: hidden;
+  }
+  .astronaut__desc,
+  .programmer__desc {
+    text-align: center;
+    font-size: 20px;
+  }
+  /* Contact */
+  .contact__container {
+    overflow: hidden;
+  }
+  .contact__title {
+    display: flex;
+    justify-content: center;
+  }
+  .contact__titleh1 {
+    width: 100%;
+    font-size: 25px;
+    transition: 0.9s;
+  }
+  .contact__input {
+    width: 270px;
+    transition: 0.9s;
+  }
+  .contact__input::placeholder {
+    font-size: 20px;
+  }
+  /* Footer */
+  .footer__container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__rights {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__list {
+    width: 246px;
+    margin-right: 10px;
+  }
+  .footer__credits {
+    width: 218px;
+    font-size: 15px;
+  }
+  .footer__links {
+    font-size: 20px;
+  }
+}
+/* ======================== ANIMATIONS ========================== */
+/* ----------- HOME ANIMATIONS --------- */
+.home__title {
+  animation: TextEffect 10s infinite;
+  transform-origin: bottom;
+}
+@keyframes TextEffect {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+.moovingstars {
+  animation: Movingstars 30s infinite;
+  transform-origin: top;
+}
+.moingstar2 {
+  animation: Movingstars2 30s infinite;
+  transform-origin: left;
+}
+.movingstar3 {
+  animation: Movingstars2 30s infinite;
+  transform-origin: top;
+}
+@keyframes Movingstars {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(-40deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes Movingstars2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(-70deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.movinghand {
+  animation: HandMove 4s infinite;
+  transform-origin: bottom;
+}
+.movingshoulder {
+  animation: HandMove 4s infinite;
+  transform-origin: bottom;
+}
+@keyframes HandMove {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-0.9deg);
+  }
+  70% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.homerocket {
+  animation: RocketFly 10s infinite;
+  transform-origin: right;
+}
+.rocketwindow {
+  animation: RocketFly 10s infinite;
+  transform-origin: right;
+}
+.rocketglass {
+  animation: RocketFly 10s infinite;
+  transform-origin: right;
+}
+.rocketbottom {
+  animation: RocketFly 10s infinite;
+  transform-origin: right;
+}
+@keyframes RocketFly {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(5deg);
+  }
+  60% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+/* ----------- HOME ANIMATIONS --------- */

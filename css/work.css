@@ -1,0 +1,438 @@
+/* Fonts */
+@font-face {
+  font-family: "futura-Medium";
+  src: url(../Fonts/futura\ medium\ bt.ttf);
+}
+@font-face {
+  font-family: "futura-Bold";
+  src: url(../Fonts/futura\ bold.ttf);
+}
+/* Others */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  background-color: #3f3d56;
+}
+/* Buttons */
+.scroll__top {
+  position: fixed;
+  right: -10rem;
+  bottom: -10rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff6584;
+  transition: 0.9s;
+}
+.show-top {
+  bottom: 1;
+}
+.scrollup__icon {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  font-size: 30px;
+  color: #fff;
+  transition: 0.9s;
+}
+.show-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff6584;
+  transition: 0.9s;
+}
+.scroll__top:hover {
+  background-color: #8985c6;
+  transition: 0.9s;
+}
+.buttons {
+  width: 230px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: #ff6584;
+  font-size: 25px;
+  font-family: "futura-Medium";
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.buttons:hover {
+  background-color: #8985c6;
+  transition: 0.9s;
+}
+/* NavBar */
+.nav {
+  width: 100%;
+  height: 85px;
+  background-color: rgba(20, 26, 38, 0.1);
+  margin-bottom: 100px;
+  transition: 0.9s;
+}
+.nav__title {
+  width: 127px;
+  height: 29px;
+  font-family: "futura";
+  font-size: 25px;
+  letter-spacing: 1.25px;
+  color: #ff6584;
+  display: none;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.nav__title:hover {
+  color: #fff;
+  transition: 0.9s;
+}
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.9s;
+}
+.nav__list {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: repeat(4, 120px);
+  transition: 0.9s;
+}
+.nav__item {
+  list-style-type: none;
+  transition: 0.9s;
+}
+.nav__link {
+  font-family: "futura-Medium";
+  font-size: 25px;
+  letter-spacing: 1.25px;
+  text-decoration: none;
+  text-decoration-line: none;
+  color: #fff;
+  transition: 0.9s;
+}
+.nav__close {
+  font-size: 20px;
+  color: white;
+  transition: 0.9s;
+  cursor: pointer;
+  display: none;
+}
+.nav__close:hover {
+  color: #e7607e;
+  transition: 0.9s;
+}
+.nav__link:hover {
+  color: #ff6584;
+  transition: 0.9s;
+}
+.nav__collapse {
+  display: none;
+}
+.nav__collapse:hover {
+  color: #fff;
+  transition: 0.9s;
+}
+
+/* ALL */
+.title {
+  width: 276px;
+  height: 44px;
+  font-family: "futura";
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ff6584;
+  transition: 0.9s;
+}
+/* Companies */
+.companies {
+  width: 100%;
+  height: 625px;
+  background-color: #3f3d56;
+  transition: 0.9s;
+}
+.companiestitle__holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 57px;
+  transition: 0.9s;
+}
+.companies1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 20px;
+  transition: 0.9s;
+}
+
+/* ------------------------ Projects ------------------------ */
+.projects__container {
+  margin-bottom: 60px;
+  transition: 0.9s;
+}
+.projects__holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 57px;
+  transition: 0.9s;
+}
+.projects1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 20px;
+  grid-row: auto;
+  transition: 0.9s;
+}
+
+/* ------------------------  CARDS ------------------------ */
+.cards {
+  width: 345px;
+  height: 390px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #8985c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  transition: 0.9s;
+}
+.text__desc {
+  width: 334px;
+  height: 105px;
+  background-color: #3f3d56;
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+  bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.9s;
+}
+.text__desc1 {
+  font-family: "futura-Medium";
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #e8e8e8;
+  transition: 0.9s;
+}
+.image__holder {
+  width: 334px;
+  height: 265.6px;
+  border-radius: 20px 20px 0px 0px;
+  transition: 0.9s;
+}
+
+.youtube {
+  background-image: url(../img/youtube\ company.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.9s;
+}
+.google {
+  background-image: url(../img/google\ company.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.9s;
+}
+.facebook {
+  background-image: url(../img/faceboock\ company.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.9s;
+}
+/* ------------------------  Footer ------------------------ */
+.footer__container {
+  height: 215px;
+  background-color: #29283a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.9s;
+}
+.footer__credits {
+  width: 309px;
+  height: 30px;
+  font-family: "futura-Medium";
+  font-size: 20px;
+  color: #8c8c8c;
+  transition: 0.9s;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  transition: 0.9s;
+}
+.footer__links {
+  width: 76px;
+  height: 29px;
+  margin: 5px;
+  font-size: 25px;
+  letter-spacing: 1.25px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "futura-Medium";
+  transition: 0.9s;
+}
+.footer__links:hover {
+  color: #ff6584;
+  transition: 0.9s;
+}
+.footer__social a {
+  text-decoration: none;
+}
+.socials {
+  font-size: 30px;
+  color: #ff6584;
+  transition: 0.9s;
+}
+.socials:hover {
+  color: white;
+  transition: 0.9s;
+}
+
+/* Large Devices */
+@media screen and (max-width: 1225px) {
+  /* Cards */
+  .companies {
+    width: 100%;
+    height: 1025px;
+    background-color: #3f3d56;
+  }
+  .projects1,
+  .companies1 {
+    grid-template-columns: auto auto;
+  }
+}
+
+/* Medium Devices */
+@media screen and (max-width: 855px) {
+  /* Cards */
+  .companies {
+    width: 100%;
+    height: 1425px;
+    background-color: #3f3d56;
+  }
+  .projects1,
+  .companies1 {
+    grid-template-columns: auto;
+  }
+  /* footer */
+  .footer__credits {
+    width: 223px;
+    font-size: 15px;
+    transition: 0.9s;
+  }
+  .footer__links {
+    font-size: 20px;
+    transition: 0.9s;
+  }
+  .socials {
+    font-size: 25px;
+    transition: 0.9s;
+  }
+}
+/* Small Devices */
+@media screen and (max-width: 680px) {
+  /* Navbar */
+  .nav__showmenu {
+    width: 100%;
+    height: 20px;
+  }
+  .nav__smalldevice {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    overflow: hidden;
+  }
+  .nav__link {
+    font-size: 20px;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+  }
+  .nav__menu {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    background-color: #3b3a51;
+    transition: 0.9s;
+  }
+  .remove-menu {
+    top: -400px;
+    transition: 0.9s;
+  }
+  .nav__close {
+    display: inline-block;
+  }
+  .nav__title {
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.9s;
+  }
+
+  .nav__collapse {
+    font-size: 50px;
+    display: inline-block;
+    color: #e7607e;
+    margin-top: 10px;
+    margin-right: 5px;
+    transition: 0.9s;
+    cursor: pointer;
+  }
+
+  /* Footer */
+  .footer__container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__rights {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__list {
+    width: 246px;
+    margin-right: 10px;
+  }
+  .footer__credits {
+    width: 218px;
+    font-size: 15px;
+  }
+  .footer__links {
+    font-size: 20px;
+  }
+}
